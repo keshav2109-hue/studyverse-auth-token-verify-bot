@@ -9,14 +9,14 @@ from telegram.ext import (
 )
 
 # === CONFIG ===
-BOT_TOKEN = "8110208824:AAHeRb4fQ5rBiQ58-H6B5h4pWbWGEWdZN80"  # <- Change this!
+BOT_TOKEN = "8475934439:AAHlaKfYR3TUNserPFjSDRQPUXtJ9sXFH1M"  # <- Change this!
 CHANNELS = [
-    ("@illegalhuub", "https://t.me/illegalhuub"),
-    ("@StudyEra_0", "https://t.me/StudyEra_0")
+    ("@studyverse_network_sv", "https://t.me/studyverse_network_sv"),
+    ("@studyverse_network", "https://t.me/studyverse_network")
 ]
-SECRET_KEY = "STUDYERA2025"
-OWNER_LINK = "https://t.me/II_ABOUT_ARSH_II"
-SITE_LINK = "https://studyera-ofiicial.vercel.app/auth.html"
+SECRET_KEY = "STUDYVERSE2025"
+OWNER_LINK = "https://t.me/mr_bean_teddy_lover"
+SITE_LINK = "https://studyverse-network.netlify.app/auth.html"
 
 # === LOGGING ===
 logging.basicConfig(level=logging.INFO)
@@ -45,7 +45,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         ])
 
         await update.message.reply_text(
-            "<b>🚀 Welcome to StudyEra!</b>\n\n"
+            "<b>🚀 Welcome to StudyVerse Network!</b>\n\n"
             "📚 Free Educational Resources — Notes, PYQs, Live Batches, Test Series & more!\n\n"
             "🔐 Access is secured via channel membership.\n\n"
             "👉 Please join the below channels to unlock your daily access token 👇",
@@ -121,7 +121,7 @@ def main():
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CallbackQueryHandler(check_channels, pattern="check"))
     app.add_error_handler(error_handler)
-    print("🤖 Bot is live! @StudyEraToken_bot")
+    print("🤖 Bot is live! @StudyVerseKey_bot")
     app.run_polling()
 
 if __name__ == "__main__":
