@@ -15,7 +15,7 @@ CHANNELS = [
     ("@studyverse_network", "https://t.me/studyverse_network")
 ]
 SECRET_KEY = "STUDYVERSE2025"
-OWNER_LINK = "https://t.me/mr_bean_teddy_lover"
+OWNER_LINK = "https://t.me/Madhav_IzPro"
 SITE_LINK = "https://studyverse-network.netlify.app/auth.html"
 
 # === LOGGING ===
